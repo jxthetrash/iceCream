@@ -20,7 +20,7 @@ import AddToCart from "./AddToCart";
 import CupChoice from "./CupChoice";
 import CupDetails from "./CupDetails";
 
-const CupPicker = () => {
+const Picker = () => {
   // @todo, there are two things State will need to keep track of
   // 1. which cup you clicked (so it knows which cup to feature in the left column)
   // 2. The message you'd like to display after clicking "add to cart"
@@ -79,4 +79,4 @@ const CupPicker = () => {
     </div>)
 }
 
-export default CupPicker;
+export default Picker;
