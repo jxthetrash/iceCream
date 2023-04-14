@@ -6,8 +6,7 @@ function App() {
       <header className="App-header">
         <h1 className="d-flex justify-content-center">ICE CREAM STORE</h1>
       </header>
-      {/* @todo - head over to  <CupPicker> to get started! */}
-      <CupPicker />
+      <Picker />
     </div>
   );
 }

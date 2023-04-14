@@ -1,19 +1,3 @@
-// HI SI 579 Student! This is not *that* complex an application,
-// but turning it into written instructions sure makes it seem
-// that way. For many of you, basing most of what you do on the
-// working example will be easier than going through all these
-// instructions across four components.
-
-// @tip if we already provided markup, keep it there. It's there
-// to help.
-
-// @tip the React Developer Tools Chrome extension will make this WAY
-// easier. The components in the inspector won't match the component names anymore
-// (this is default React behavior, lecture 13 have a workaround). It should
-// be pretty clear which component is which, though...
-
-// This 👇 is an array of cupChoices that has already been imported for you
-// This will be used to create the grid of available cups to purchase.
 import { useState } from "react";
 import {cupChoices} from "../util/cupselections";
 import AddToCart from "./AddToCart";
@@ -41,14 +25,8 @@ const Picker = () => {
 
       <div className="row">
         <div className='col col-5'>
-          {!Number.isInteger(targetCupIndex) && <strong>Please Choose A Cup</strong>}
-          {/* Info on the selected cup and the add to cart button appear here */}
-          {/* @todo Conditional display! this should not output anything unless you've clicked a cup in the cup grid.
-          If you've clicked a cup, you need two things:
-           1. A <CupDetails> component that provides a large display of the selected cup
-           2. An <AddToCart> component that provides a button that, when clicked, results
-            in the "Added THE-CUP-NAME to cart" message that is conditionally displayed a few lines up
-           */}
+          {!Number.isInteger(targetCupIndex) && <strong>Please Choose An Ice Cream</strong>}
+
           {Number.isInteger(targetCupIndex) && <CupDetails 
             description={cupChoices[targetCupIndex].description}
             imageUrl={cupChoices[targetCupIndex].imageUrl}
@@ -61,7 +39,7 @@ const Picker = () => {
         </div>
 
         <div className='col col-6'>
-          <h2>Pick a cup</h2>
+          <h2>Pick n Ice Cream</h2>
           <div className='row'>
             {/* The cups available for purchase appear here. These are generated from the items in the cupChoices array */}
             {/* There is an array called cupChoices that is already imported. Each item in cupChoices should be
