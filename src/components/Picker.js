@@ -25,7 +25,7 @@ const Picker = () => {
 
       <div className="row">
         <div className='col col-5'>
-          {!Number.isInteger(targetCupIndex) && <strong>Please Choose An Ice Cream</strong>}
+          {!Number.isInteger(targetCupIndex) && <img src="images/placeholder.png" id="placehoder" />}
 
           {Number.isInteger(targetCupIndex) && <CupDetails 
             description={cupChoices[targetCupIndex].description}
