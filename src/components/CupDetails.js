@@ -6,8 +6,8 @@
 const CupDetails = ({description, imageUrl, name})  => {
     return (
         <>
-        <h2 className="detail-name">{name}</h2>
         <img className="img-fluid detail-pic" src={imageUrl} alt={name} />
+        <h2 className="detail-name">{name}</h2>
         <p className="discription">{description}</p>
         </>
     )

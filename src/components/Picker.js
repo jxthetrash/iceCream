@@ -21,15 +21,14 @@ const Picker = () => {
   // }
  
   return (
-    <div className='container'>
+    <div className='container-fluid'>
       {/* The message that appears after adding to cart appears here. */}
       {/* @todo Conditional display! This not output anything if you haven't clicked "Add To Cart" yet.: */}
       {addedToCartCup && <p className="alert alert-success">{addedToCartCup}</p>}
 
       <div id="grid">
         <div id="display">
-          {!Number.isInteger(targetCupIndex) && <img src="images/placeholder.png" id="placehoder" className="img-fluid"/>}
-
+          {!Number.isInteger(targetCupIndex) && <div id="placeholder"><img src="images/placeholder.png" className="img-fluid" id="placeholder-img"/></div>}
           {Number.isInteger(targetCupIndex) && <CupDetails {...cupChoices[targetCupIndex]} />} 
         </div>
 
@@ -47,6 +46,9 @@ const Picker = () => {
                 name={cupChoice.name}
                 setChosenCup={setTargetCupIndex}/>)}
           </div>
+        </div>
+        <div id="intro">
+          {!Number.isInteger(targetCupIndex) && <h5>The page introduces 12 types of ice creams around the world! Click on the thumbnails to  find out more about diffrent ice creams.</h5>}
         </div>
       </div>
     </div>)
