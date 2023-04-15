@@ -13,7 +13,7 @@ const CupChoice = ({description, imageUrl, index, name, setChosenCup}) => {
 
     return (
         <div className="item" onClick={()=> setChosenCup(index)}>
-         <img src={imageUrl} className="thumbnail rounded img-thumbnail" alt={name} />
+         <img src={imageUrl} className="img-fluid thumbnail rounded img-thumbnail" alt={name} />
          <h6 className="name">{name}</h6>
      </div>)
 }

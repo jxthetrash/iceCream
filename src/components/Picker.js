@@ -33,7 +33,7 @@ const Picker = () => {
         </div>
 
         <div id="options">
-          <h3>Pick an Ice Cream</h3>
+          <h3 className="text-center">Pick an Ice Cream</h3>
           <div id="option-list">
             {/* The cups available for purchase appear here. These are generated from the items in the cupChoices array */}
             {/* There is an array called cupChoices that is already imported. Each item in cupChoices should be
