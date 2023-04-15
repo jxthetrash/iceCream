@@ -1,8 +1,8 @@
 {
   "name": "template-react",
+  "homepage": "https://jxthetrash.github.io/iceCream/",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jxthetrash.github.io/iceCream",
   "dependencies": {
     "@testing-library/cypress": "^8.0.3",
     "@testing-library/jest-dom": "^5.16.5",
