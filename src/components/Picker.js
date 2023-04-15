@@ -16,9 +16,9 @@ const Picker = () => {
     console.log(addedToCartCup)
   }
   
-  const colorOverlay = (index) {
+  // const colorOverlay = (index) {
     
-  }
+  // }
  
   return (
     <div className='container'>
