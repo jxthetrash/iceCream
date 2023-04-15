@@ -12,9 +12,9 @@
 const CupChoice = ({description, imageUrl, index, name, setChosenCup}) => {
 
     return (
-        <div className="col col-3" onClick={()=> setChosenCup(index)}>
-         <img src={imageUrl} className="img-fluid" alt={name} />
-         <h6>{name}</h6>
+        <div className="item" onClick={()=> setChosenCup(index)}>
+         <img src={imageUrl} className="img-fluid rounded border border-secondary" alt={name} />
+         <h6 className="name">{name}</h6>
      </div>)
 }
 

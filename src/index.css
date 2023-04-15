@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+  font-family: "Open sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,10 +13,31 @@ code {
     monospace;
 }
 
+h1{
+  font-family: 'Moo Lah Lah', cursive;
+}
 
+.name{
+  display: none;
+}
+
+#option-list{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 20%;
+  column-gap: 5%;
+}
+
+.detail-name{
+  padding: 1% 0 1% 0;
+}
+.detail-pic{
+  padding-bottom: 3%;
+}
+#option-list{
+  padding-bottom: 10%;
+}
 
 @media screen and (min-width: 600px) {
-  #placehoder{
-    width: 40vw;
-  }
+
 }
