@@ -50,7 +50,13 @@ h1{
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid #ffffff;
 }
-
+.active{
+  border: 2px solid #1d1d1d;
+  border-inline: 2px solid #1d1d1d;
+}
+.item-active{
+  background-color: rgba(0, 0, 0, 0);
+}
 .detail-name{
   padding-bottom: 1%;
 }

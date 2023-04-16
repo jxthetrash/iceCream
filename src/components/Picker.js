@@ -10,7 +10,7 @@ const Picker = () => {
   // 2. The message you'd like to display after clicking "add to cart"
   const [addedToCartCup, setaddedToCartCup] = useState('')
   const [targetCupIndex, setTargetCupIndex] = useState('')
-  
+
   const getCupInCart = (cup) => {
     setaddedToCartCup(cup)
     console.log(addedToCartCup)
@@ -44,7 +44,9 @@ const Picker = () => {
                 description={cupChoice.description}
                 imageUrl={cupChoice.imageUrl}
                 name={cupChoice.name}
-                setChosenCup={setTargetCupIndex}/>)}
+                setChosenCup={setTargetCupIndex}
+                active={targetCupIndex === index}
+                />)}
           </div>
         </div>
         <div id="intro">

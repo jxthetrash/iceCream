@@ -9,11 +9,11 @@
 // The <div class='col col-3'> needs a click listener so when you click it
 // it appears in the left column as your choice.
 
-const CupChoice = ({description, imageUrl, index, name, setChosenCup}) => {
+const CupChoice = ({active, description, imageUrl, index, name, setChosenCup}) => {
 
     return (
-        <div className="item" onClick={()=> setChosenCup(index)}>
-         <img src={imageUrl} className="img-fluid thumbnail rounded img-thumbnail" alt={name} />
+        <div className={active? "item item-active" : "item"} onClick={()=> setChosenCup(index)}>
+         <img src={imageUrl} className={active? "img-fluid thumbnail rounded img-thumbnail active" : "img-fluid thumbnail rounded img-thumbnail"} alt={name} />
          <h6 className="name">{name}</h6>
      </div>)
 }
