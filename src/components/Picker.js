@@ -20,7 +20,7 @@ const Picker = () => {
       <div id="grid">
         <div id="display">
           {!Number.isInteger(targetCupIndex) && <div id="placeholder"><img src="images/placeholder.png" className="img-fluid" id="placeholder-img" alt="9 diffrent types of ice creams on a blue and pink background"/></div>}
-          {Number.isInteger(targetCupIndex) && <CupDetails {...cupChoices[targetCupIndex]} />} 
+          {Number.isInteger(targetCupIndex) && <CupDetails {...cupChoices[targetCupIndex]} receipeUrl={cupChoices[targetCupIndex].recipeUrl}/>} 
         </div>
 
         <div id="options">
@@ -38,7 +38,6 @@ const Picker = () => {
                 setChosenCup={setTargetCupIndex}
                 active={targetCupIndex === index}
                 />)}
-            {Number.isInteger(targetCupIndex) && <ReceipeButton  receipeUrl={cupChoices[targetCupIndex].recipeUrl}/>}
           </div>
         </div>
         <div id="intro">

@@ -1,5 +1,5 @@
 
-const CupChoice = ({active, description, imageUrl, index, name, setChosenCup}) => {
+const CupChoice = ({active, imageUrl, index, name, setChosenCup}) => {
 
     return (
         <div className={active? "item item-active" : "item"} onClick={()=> setChosenCup(index)}>

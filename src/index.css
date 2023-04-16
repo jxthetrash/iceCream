@@ -67,6 +67,12 @@ h1{
   padding-bottom: 10%;
 }
 
+#name-and-button{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 @keyframes gradient {
   0% {
       background-position: 0% 50%;
@@ -94,7 +100,6 @@ h1{
   #display{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
   }
   #grid{
