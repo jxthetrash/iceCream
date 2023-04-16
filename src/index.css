@@ -6,7 +6,7 @@ body {
   font-family: "Open sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(-45deg, #f7eccf, #f4cfdf, #b6d8f2, rgb(170, 170, 216));
+  background: linear-gradient(-45deg, #f7e6cf, #f4cfdf, #b6d8f2, rgb(190, 170, 216));
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
@@ -117,11 +117,10 @@ h1{
   }
   #intro{
     grid-column: 1/ span 2;
-    text-align: center;
   }
 }
 
-@media screen and (min-width:1141px) {
+@media screen and (min-width:1445px) {
   #display{
     grid-row: 1/ span 2;
   }
