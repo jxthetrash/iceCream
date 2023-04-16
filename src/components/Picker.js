@@ -28,7 +28,7 @@ const Picker = () => {
 
       <div id="grid">
         <div id="display">
-          {!Number.isInteger(targetCupIndex) && <div id="placeholder"><img src="images/placeholder.png" className="img-fluid" id="placeholder-img"/></div>}
+          {!Number.isInteger(targetCupIndex) && <div id="placeholder"><img src="images/placeholder.png" className="img-fluid" id="placeholder-img" alt="9 diffrent types of ice creams on a blue and pink background"/></div>}
           {Number.isInteger(targetCupIndex) && <CupDetails {...cupChoices[targetCupIndex]} />} 
         </div>
 
@@ -52,7 +52,9 @@ const Picker = () => {
         <div id="intro">
           {!Number.isInteger(targetCupIndex) && <h3>The page introduces 12 types of ice creams around the world! Click on the thumbnails to  find out more about diffrent ice creams.</h3>}
         </div>
+      
       </div>
+
     </div>)
 }
 
