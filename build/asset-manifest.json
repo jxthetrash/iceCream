@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/iceCream/static/css/main.fdd6fdf6.css",
+    "main.css": "/iceCream/static/css/main.433f001f.css",
     "main.js": "/iceCream/static/js/main.e0b38542.js",
     "static/js/787.97645cec.chunk.js": "/iceCream/static/js/787.97645cec.chunk.js",
     "index.html": "/iceCream/index.html",
-    "main.fdd6fdf6.css.map": "/iceCream/static/css/main.fdd6fdf6.css.map",
+    "main.433f001f.css.map": "/iceCream/static/css/main.433f001f.css.map",
     "main.e0b38542.js.map": "/iceCream/static/js/main.e0b38542.js.map",
     "787.97645cec.chunk.js.map": "/iceCream/static/js/787.97645cec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fdd6fdf6.css",
+    "static/css/main.433f001f.css",
     "static/js/main.e0b38542.js"
   ]
 }

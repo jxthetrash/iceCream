@@ -51,8 +51,7 @@ h1{
   border: 2px solid #ffffff;
 }
 .active{
-  border: 2px solid #1d1d1d !important;
-  border-inline: 2px solid #1d1d1d;
+  border: 2px solid #747474 !important;
 }
 .item-active{
   background-color: rgba(0, 0, 0, 0);
@@ -114,7 +113,9 @@ h1{
   .name{
     display: inline;
   }
-  
+  .detail-pic{
+    width: 80%;
+  }
   #intro{
     grid-column: 1/ span 2;
     padding-top: 5%;
