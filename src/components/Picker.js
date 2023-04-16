@@ -1,8 +1,8 @@
 import { useState } from "react";
 import {cupChoices} from "../util/selections";
-import AddToCart from "./AddToCart";
 import CupChoice from "./CupChoice";
 import CupDetails from "./CupDetails";
+import ReceipeButton from "./ReceipeButton"
 
 const Picker = () => {
   // @todo, there are two things State will need to keep track of
@@ -10,15 +10,6 @@ const Picker = () => {
   // 2. The message you'd like to display after clicking "add to cart"
   const [addedToCartCup, setaddedToCartCup] = useState('')
   const [targetCupIndex, setTargetCupIndex] = useState('')
-
-  const getCupInCart = (cup) => {
-    setaddedToCartCup(cup)
-    console.log(addedToCartCup)
-  }
-  
-  // const colorOverlay = (index) {
-    
-  // }
  
   return (
     <div className='container-fluid'>
@@ -47,6 +38,7 @@ const Picker = () => {
                 setChosenCup={setTargetCupIndex}
                 active={targetCupIndex === index}
                 />)}
+            {Number.isInteger(targetCupIndex) && <ReceipeButton  receipeUrl={cupChoices[targetCupIndex].recipeUrl}/>}
           </div>
         </div>
         <div id="intro">
