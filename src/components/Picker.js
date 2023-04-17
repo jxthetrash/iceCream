@@ -41,7 +41,7 @@ const Picker = () => {
           </div>
         </div>
         <div id="intro">
-          {!Number.isInteger(targetCupIndex) && <h3>The page introduces 12 types of ice creams around the world! Click on the thumbnails to  find out more about diffrent ice creams.</h3>}
+          {!Number.isInteger(targetCupIndex) && <h4>The page introduces 12 types of ice creams around the world! Click on the thumbnails to  find out more about diffrent ice creams.</h4>}
         </div>
       
       </div>
